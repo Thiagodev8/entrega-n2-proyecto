@@ -1,0 +1,263 @@
+/* TITULO PRINCIPAL */
+h1{
+    background-color: #434343;
+    color: rgb(248, 248, 248);
+    font-family: "Special Gothic Condensed One", sans-serif;
+    text-align: center;
+    letter-spacing: 3px;
+    margin-bottom: 0px;
+    text-shadow: 0px 0px 2px rgb(0, 0, 0);
+}
+
+/* CAJA DEL LOGO EN EL HEADER */
+.row .col-2 img{
+    width: 70%;
+    margin-left: 40px;
+    filter: drop-shadow(15px 15px 10px black);
+}
+
+/* TODOS LOS ELEMENTOS DENTRO DEL HEADER */
+.barra-principal{
+    background-color: #434343;
+}
+
+/* TODOS LOS DIVS DENTRO DEL HEADER*/
+.barra-principal > div{
+    margin: auto;
+}
+
+/* LAS 4 SECCIONES DEL HEADER */
+.h6 a{
+    text-decoration: none;
+    color: rgb(248, 248, 248);
+}
+
+/* ESTILO DE LAS SECCIONES */
+.h6 a:hover{
+    border: 2px solid rgb(248, 248, 248);
+    padding: 8px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 4px gray;
+}
+
+/* CARRITO DE COMPRA */
+.carrito{
+    color: rgb(248, 248, 248);
+    filter: drop-shadow(0px 0px 2px #0008);  
+}
+
+/* CAJA DEL BUSCADOR */
+.buscador{
+    padding-bottom: 10px;
+}
+
+/* BARRA DEL BUSCADOR */
+.buscador input{
+    width: 400px;
+    text-align: center;
+    border: 3px solid rgb(63, 63, 63);
+    padding: 8px;
+    border-radius: 15px;
+    color: rgb(0, 0, 0);
+    height: 35px;
+}
+
+/* LUPA DE BUSCADOR */
+.buscador i{
+    color: white;
+    margin-left: 8px;
+}
+
+/* ----------------------------------------------MAIN--------------------------------------------------------------- */
+
+/* COLOR DE FONDO DE TODO EL MAIN */
+main{
+    background-color: rgb(247, 200, 115);
+}
+
+/* imagenes de fondo banner */
+.fondo{
+    background-image: url(img/fondo-banner.png);
+    height: 400px;
+    box-shadow: 0px 0px 30px black;
+}
+
+/* Efectos dentro del banner */
+.oscuro{
+    background-color: #000a;
+    height: 100%;
+    width: 100%;
+    color: rgb(255, 255, 255); 
+    text-shadow: 0px 0px 1.5px white;
+    padding: 150px;
+}
+
+/* TITULO DEL H3 DENTRO DEL MAIN */
+.productos-destacados h3{
+    border: 3px solid white;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 5px;
+    margin: 10px;
+    margin-top:40px;
+    margin-bottom: 25px;
+}
+
+/* COLUMNAS DE PRODUCTOS DESTACADOS */
+.mas-vendido{
+    display: flex;
+    gap: 25px;
+}
+
+/* caja de todas las cartas */
+.card{
+    box-shadow: 0px 0px 15px black;
+    margin-bottom: 50px;
+}
+
+/* color de fondo de las cartas */
+.card-body{
+    background-color: rgb(250, 235, 205);
+}
+
+/* botones de las cartas */
+.botones{
+    display: flex;
+    justify-content: center;
+}
+
+/* precio de las cartas */
+.precio{
+    background-color: rgb(250, 235, 205);
+    color: black;
+    border: none;
+}
+
+/* ---------------------------------------------------------FOOTER------------------------------------------------------- */
+
+/* footer completo */
+footer{
+    background-color: rgb(63, 63, 63);
+    display: flex;
+    box-shadow: 0px 0px 30px black;
+}
+
+/* Ambos elementos del footer juntos*/
+.footer-general{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+/* elementos del footer por separado */
+.footer-general .footer{
+    color: white;
+    border: 2px solid white;
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+/* titulos de ambos footer  */
+.footer h3{
+    border-bottom: 2px solid white;
+    text-align: center;
+}
+
+/* links del footer */
+.footer a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+/* MAPA (UBICACION LOCAL) */
+.container iframe{
+    height: 290px;
+    width: 500px;
+    margin-top: 20px;
+}
+
+@media (min-width: 768px) and (max-width: 2560px) {
+    
+    .dropdown{
+        display: none;
+    }
+}
+
+
+@media (min-width: 426px) and (max-width: 768px) {
+
+    .productos-destacados h3{
+        display: flex;
+        justify-content: center;
+    }
+
+    main .mas-vendido{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container iframe{
+        height: 200px;
+        width: 300px;
+    }
+
+    .footer-general .footer{
+        margin-top: 15px;
+    }
+
+    .dropdown{
+        display: none;
+    }
+
+}
+
+@media (max-width: 425px) {
+    
+    .col-2{
+        display: none;
+    }
+    
+    
+    .buscador{
+        display: flex;
+        align-items: center;
+        width: 80%;
+        padding-top: 10px;
+        padding-right: 27px;
+    }
+
+    .buscador a{
+        padding-top: 5px;
+    }
+    
+    .fondo .oscuro{
+        padding: 120px
+    }
+
+    .productos-destacados h3{
+        display: flex;
+        justify-content: center;
+    }
+
+    main .mas-vendido{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer{
+        flex-direction: column;
+        padding-top: 40px;
+    }
+
+    .container iframe{
+        width: 100%;
+    }
+
+    .dropdown .btn{
+        width: 100%;
+        background-color: #434343;
+    }
+}

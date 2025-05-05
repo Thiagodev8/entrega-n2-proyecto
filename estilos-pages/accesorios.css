@@ -1,0 +1,243 @@
+/* TITULO PRINCIPAL */
+h1{
+    background-color: #434343;
+    color: rgb(251, 255, 0);
+    font-family: "Special Gothic Condensed One", sans-serif;
+    text-align: center;
+    letter-spacing: 3px;
+    margin-bottom: 0px;
+    text-shadow: 0px 0px 5px rgb(251, 255, 0);
+}   
+
+/* -----------------------------------------------------HEADER-------------------------------------------------------- */
+
+/* CAJA DEL LOGO EN EL HEADER */
+.row .col-2 img{
+    width: 70%;
+    margin-left: 40px;
+    filter: drop-shadow(15px 15px 10px black);
+}
+
+/* TODOS LOS ELEMENTOS DENTRO DEL HEADER */
+.barra-principal{
+    background-color: #434343;
+}
+
+/* TODOS LOS DIVS DENTRO DEL HEADER*/
+.barra-principal > div{
+    margin: auto;
+}
+
+/* LAS 4 SECCIONES DEL HEADER */
+.h6 a{
+    text-decoration: none;
+    color: rgb(248, 248, 248);
+}
+
+/* ESTILO DE LAS SECCIONES */
+.h6 a:hover{
+    border: 2x solid rgb(248, 248, 248);
+    padding: 8px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 4px gray;
+}
+
+/* CARRITO DE COMPRA */
+.carrito{
+    color: rgb(248, 248, 248);
+    filter: drop-shadow(0px 0px 2px #0008);  
+}
+
+/* CAJA DEL BUSCADOR */
+.buscador{
+    padding-bottom: 10px;
+}
+
+/* BARRA DEL BUSCADOR */
+.buscador input{
+    width: 400px;
+    text-align: center;
+    border: 3px solid rgb(63, 63, 63);
+    padding: 8px;
+    border-radius: 15px;
+    color: rgb(0, 0, 0);
+    height: 35px;
+}
+
+/* LUPA DE BUSCADOR */
+.buscador i{
+    color: white;
+    margin-left: 8px;
+}
+
+/* ------------------------------------------------------------MAIN----------------------------------------------------- */
+
+/* COLOR DE FONDO DE TODO EL MAIN */
+main{
+    background-color: rgb(247, 200, 115);
+}
+
+/* el carrusel mas las cartas */
+.carrusel-cards{
+    display: flex;
+}
+
+/* caja del carrusel completo */
+.carrusel{
+    justify-content: center;
+    width: 400px;
+    padding-top: 50px;
+    height: auto;
+}
+
+/* borde del accordion */
+.accordion-button{
+    border: 2px solid rgb(95, 94, 93);
+}
+
+/* COLUMNAS DE PRODUCTOS DESTACADOS */
+.mas-vendido{
+    gap: 25px;
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* caja de todas las cartas */
+.card{
+    box-shadow: 0px 0px 15px black;
+    margin-bottom: 50px;
+}
+
+/* color de fondo de las cartas */
+.card-body{
+    background-color: rgb(250, 235, 205);
+}
+
+/* botones de las cartas */
+.botones{
+    display: flex;
+    justify-content: center;
+}
+
+/* precio de las cartas */
+.precio{
+    background-color: rgb(250, 235, 205);
+    color: black;
+    border: none;
+}
+
+
+
+/* -------------------------------------------------------FOOTER---------------------------------------------------- */
+
+
+/* footer completo */
+footer{
+    background-color: rgb(63, 63, 63);
+    display: flex;
+    box-shadow: 0px 0px 30px black;
+}
+
+/* Ambos elementos del footer menos el mapa */
+.footer-general{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.footer-general .footer{
+    color: white;
+    border: 2px solid white;
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+/* titulos de ambos footer  */
+.footer h3{
+    border-bottom: 2px solid white;
+    text-align: center;
+}
+
+/* links del footer */
+.footer a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+/* MAPA (UBICACION LOCAL) */
+.container iframe{
+    height: 290px;
+    width: 500px;
+    margin-top: 20px;
+}
+
+@media (min-width: 768px) and (max-width: 2560px) {
+    
+    .dropdown{
+        display: none;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+
+    .container iframe{
+        height: 200px;
+        width: 300px;
+    }
+
+    .footer-general .footer{
+        margin-top: 15px;
+    }
+
+    .dropdown{
+        display: none;
+    }
+}
+
+@media (max-width: 425px) {
+    
+    .col-2{
+        display: none;
+    }
+    
+    .buscador{
+        display: flex;
+        align-items: center;
+        width: 80%;
+        padding-top: 10px;
+        padding-right: 27px;
+    }
+
+    .buscador a{
+        padding-top: 5px;
+    }
+    
+    .fondo .oscuro{
+        padding: 120px
+    }
+
+    footer{
+        flex-direction: column;
+        padding-top: 30px;
+    }
+
+    .container iframe{
+        width: 100%;
+    }
+
+    .dropdown .btn{
+        width: 100%;
+        background-color: #434343;
+    }
+
+    .carrusel-cards{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}
+
