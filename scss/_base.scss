@@ -1,0 +1,11 @@
+@use 'variables';
+
+h1 {
+  background-color: variables.$gris-oscuro;
+  color: variables.$amarillo;
+  font-family: variables.$fuente-titulo;
+  text-align: center;
+  letter-spacing: 3px;
+  margin-bottom: 0;
+  text-shadow: 0 0 5px variables.$amarillo;
+}

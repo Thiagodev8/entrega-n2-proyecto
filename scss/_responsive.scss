@@ -1,0 +1,66 @@
+@use 'mixins';
+@use 'variables';
+
+@media (min-width: 768px) and (max-width: 2560px) {
+  .dropdown {
+    display: none;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .productos-destacados h3,
+  .main .mas-vendido {
+    @include mixins.flex(column);
+    align-items: center;
+  }
+
+  .container .box-1 {
+    flex-direction: column;
+  }
+
+  .container img {
+    width: 100%;
+  }
+
+  .boxs iframe,
+  .container iframe {
+    width: 100%;
+    height: 200px;
+  }
+
+  .footer-general .footer {
+    margin-top: 15px;
+  }
+
+  .dropdown {
+    display: none;
+  }
+}
+
+@media (max-width: 425px) {
+  .col-2 {
+    display: none;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  .dropdown .btn {
+    width: 100%;
+    background-color: variables.$gris-oscuro;
+  }
+
+  .carrusel-cards {
+    flex-direction: column;
+  }
+
+  .box-1 img,
+  .container iframe {
+    width: 100%;
+  }
+
+  .container .box-1 {
+    flex-direction: column;
+  }
+}

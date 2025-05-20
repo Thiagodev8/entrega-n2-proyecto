@@ -1,0 +1,53 @@
+@use 'variables';
+@use 'mixins';
+
+.barra-principal {
+  background-color: variables.$gris-oscuro;
+
+  > div {
+    margin: auto;
+  }
+}
+
+main {
+  background-color: variables.$naranja-suave;
+  padding: 30px;
+}
+
+footer {
+  background-color: variables.$gris-medio;
+  @include mixins.box-shadow(0 0 30px black);
+  padding-top: 30px;
+  @include mixins.flex(flex-start);
+
+  &.columna {
+    flex-direction: column;
+  }
+}
+
+.footer-general {
+  @include mixins.flex(column, flex-end);
+  margin-top: 30px;
+
+  .footer {
+    color: variables.$blanco;
+    border: 2px solid variables.$blanco;
+    width: 50%;
+    margin-bottom: 30px;
+
+    h3 {
+      border-bottom: 2px solid variables.$blanco;
+      text-align: center;
+    }
+
+    a {
+      text-decoration: none;
+      color: variables.$blanco;
+      padding: 5px;
+    }
+
+    &.compacto {
+      margin-top: 15px;
+    }
+  }
+}
