@@ -1,12 +1,12 @@
 
 h1{
     background-color: #434343;
-    color: rgb(251, 255, 0);
+    color: rgb(247, 200, 115);
     font-family: "Special Gothic Condensed One", sans-serif;
     text-align: center;
     letter-spacing: 3px;
     margin-bottom: 0px;
-    text-shadow: 0px 0px 5px rgb(251, 255, 0);
+    text-shadow: 0px 0px 5px rgb(110, 108, 108);
 }
 
 .row .col-2 img{
